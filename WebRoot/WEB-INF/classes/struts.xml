@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="exception">/common/exception.jsp</result>
+            <result name="succeed1">/success/success.jsp</result>
+            <result name="succeed">/success/succeed.jsp</result>
+        </global-results>
+        
+        <action name="adminLogin" class="userAction" method="adminLogin">
+             <result name="error">/admin/login.jsp</result>
+             <result name="success">/admin/index.jsp</result>
+        </action>
+        
+        <action name="userPwEdit" class="userAction" method="userPwEdit">
+        </action>
+        
+        
+        <action name="userReg" class="userAction" method="userReg">
+        </action>
+        
+        <action name="userLogin" class="userAction" method="userLogin">
+             <result name="success">/user/index2.jsp</result>
+             <result name="error">/admin/login.jsp</result>
+        </action>
+        
+        <action name="userManage" class="userAction" method="userManage">
+            <result>/user/Gerenxinxiguanli/userManage.jsp</result>
+        </action>
+        
+                
+        <action name="userEdit" class="userAction" method="userEdit">
+            <result>/user/Gerenxinxiguanli/userEdit.jsp</result>
+        </action>
+        
+        <action name="userEdit1" class="userAction" method="userEdit1">
+        </action>
+        
+        <action name="ruyuanManage" class="ruyuanAction" method="ruyuanManage">
+            <result>/admin/zhuyuanbu/ruyuanManage.jsp</result>
+        </action>
+        
+        <action name="ruyuanSearch" class="ruyuanAction" method="ruyuanSearch">
+            <result>/admin/zhuyuanbu/ruyuanManage.jsp</result>
+        </action>
+        
+        <action name="ruyuanAdd" class="ruyuanAction" method="ruyuanAdd">
+        </action>
+        
+        <action name="ruyuanDel" class="ruyuanAction" method="ruyuanDel">
+        </action>
+        
+        <action name="ruyuanEdit" class="ruyuanAction" method="ruyuanEdit">
+            <result>/admin/zhuyuanbu/ruyuanEdit.jsp</result>
+        </action>
+        
+        
+        <action name="ruyuanEdit1" class="ruyuanAction" method="ruyuanEdit1">
+        </action>
+        
+        
+       
+       
+       
+       
+       
+       
+        <action name="feiyongManage" class="FeiyongAction" method="feiyongManage">
+            <result>/admin/menzhen/feiyongManage.jsp</result>
+        </action>
+        
+        <action name="feiyongEdit" class="FeiyongAction" method="feiyongEdit">
+            <result>/admin/menzhen/feiyongEdit.jsp</result>
+        </action>
+        
+        <action name="feiyongAdd1" class="FeiyongAction" method="feiyongAdd1">
+        </action>
+        
+        <action name="feiyongEdit1" class="FeiyongAction" method="feiyongEdit1">
+        </action>
+        
+        
+        <action name="feiyongDel" class="FeiyongAction" method="feiyongDel">
+        </action>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <action name="yaopinManage" class="YaopinAction" method="yaopinManage">
+            <result>/admin/yaofang/yaopinManage.jsp</result>
+        </action>
+        <action name="yaopinSearch" class="YaopinAction" method="yaopinSearch">
+            <result>/admin/yaofang/yaopinManage.jsp</result>
+        </action>
+        <action name="yaopinAdd" class="YaopinAction" method="yaopinAdd">
+        </action>
+        
+        <action name="yaopinDel" class="YaopinAction" method="yaopinDel">
+        </action>
+        
+        
+        <action name="yaopinEdit" class="YaopinAction" method="yaopinEdit">
+            <result>/admin/yaofang/yaopinEdit.jsp</result>
+        </action>
+        
+         <action name="yaopinEdit1" class="YaopinAction" method="yaopinEdit1">
+        </action>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <action name="gongfeiAdd" class="GongfeiAction" method="gongfeiAdd">
+        </action>
+        
+        
+        <action name="gongfeiDel" class="GongfeiAction" method="gongfeiDel">
+        </action>
+        
+        <action name="gongFeiManage" class="GongfeiAction" method="gongFeiManage">
+            <result>/admin/gongfei/gongFeiManage.jsp</result>
+        </action>
+        
+        
+        <action name="gongfeiEdit" class="GongfeiAction" method="gongfeiEdit">
+            <result>/admin/gongfei/gongfeiEdit.jsp</result>
+        </action>
+        
+        <action name="gongfeiEdit1" class="GongfeiAction" method="gongfeiEdit1">
+        </action>
+        
+        
+        
+        
+        
+        
+        
+        
+        <action name="yuangongManage" class="YuangongAction" method="yuangongManage">
+            <result>/admin/yuangong/yuangongManage.jsp</result>
+        </action>
+        
+        <action name="yuangongSearch" class="YuangongAction" method="yuangongSearch">
+            <result>/admin/yuangong/yuangongManage.jsp</result>
+        </action>
+       
+        <action name="yuangongAdd" class="YuangongAction" method="yuangongAdd">
+        </action>
+        
+        <action name="yuangongDel" class="YuangongAction" method="yuangongDel">
+        </action>
+        
+        <action name="yuangongEdit" class="YuangongAction" method="yuangongEdit">
+            <result>/admin/yuangong/yuangongEdit.jsp</result>
+        </action>
+        
+        <action name="yuangongEdit1" class="YuangongAction" method="yuangongEdit1">
+        </action>
+        
+        
+        
+        
+        <action name="chuyuanAdd" class="chuZhuanyuanAction" method="chuyuanAdd">
+        </action>
+        <action name="chuyuanDel" class="chuZhuanyuanAction" method="chuyuanDel">
+        </action>
+        <action name="chuyuanManage" class="chuZhuanyuanAction" method="chuyuanManage">
+           <result>/admin/chuyuan/chuyuanManage.jsp</result>
+        </action>
+        
+        
+        
+        <action name="zhuanyuanAdd" class="chuZhuanyuanAction" method="zhuanyuanAdd">
+        </action>
+        <action name="zhuanyuanDel" class="chuZhuanyuanAction" method="zhuanyuanDel">
+        </action>
+        <action name="zhuanyuanManage" class="chuZhuanyuanAction" method="zhuanyuanManage">
+           <result>/admin/zhuanyuan/zhuanyuanManage.jsp</result>
+        </action>
+    </package>
+</struts>
